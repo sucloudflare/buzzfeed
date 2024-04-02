@@ -1,0 +1,128 @@
+/*quizz__container*/
+.quizz__container{
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/*LOGO*/
+.quizz_logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.quizz_logo img {
+  max-width: 450px; /* Define a largura máxima da imagem */
+  height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção */
+}
+
+
+
+.quizz_logo > h3 {
+  margin-top: 20px;
+  color: #f7f7f7;
+  border-radius: 25px;
+  font-weight: 900;
+  padding: 10px 20px; /* Adicionar preenchimento interno */
+  border: none; /* Cor da borda */
+  display: inline-block; /* Para que a borda envolva o texto */
+  background: linear-gradient(to right, rgba(59, 43, 7, 0.8), rgba(59, 38, 5, 0.3)); /* Background degradê */
+}
+
+
+
+/* quizz_questions*/
+.quizz_questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8d8b97;
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  font-size: 20px;
+  font-family: 'Segoe UI';
+  margin-bottom: 20px;
+  /* Adicionar background degradê transparente */
+  background-image: linear-gradient(to right, rgba(58, 34, 6, 0.8), rgba(236, 147, 46, 0.3));
+}
+
+
+/* quizz_options */
+.quizz_options{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.btn-option {
+  background-color: transparent;
+  border-radius: 8px;
+  border: 1.5px solid transparent; /* Remover a cor da borda inicial */
+  width: 50%;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffe600; /* Cor de texto mais vibrante */
+  font-family: Arial;
+  font-size: 24px; /* Aumentar o tamanho da fonte */
+  font-weight: bold; /* Tornar a fonte mais grossa */
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  /* Adicionar uma borda gradiente */
+  border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
+  /* Transição suave para a mudança de cor da borda */
+  transition: border-color 0.3s ease-in-out;
+}
+
+.btn-option:hover {
+  /* Alterar a cor da borda ao passar o mouse */
+  border-color: #ff7e5e;
+  color: #fa8a34; /* Alterar a cor do texto ao passar o mouse */
+}
+
+/*Efeito de click animação*/
+.btn-option:active{
+  position: relative;
+  top:1px;
+}
+/* Configuração classe quizz_results*/
+.quizz_results{
+  width: 100%;
+  height: 350px;
+  background-image: linear-gradient(to right, rgba(90, 100, 110, 0.8), rgba(100, 78, 210, 0.3));
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color:#333;
+}
+
+/*Configuração do botão restart */
+.restart{
+  background-image: linear-gradient(to right, rgba(70, 73, 77, 0.8), rgba(100, 78, 210, 0.3));
+  border-radius: 8px;
+  border: 1px solid #9b9989;
+  width: 50%;
+  display: inline-block;
+  cursor: pointer;
+  color: #333;
+  font-family: Arial;
+  font-size: 23px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #16445a;
+
+}
+/* Link para Restartar o game */
+
+.restart a{
+ color: #302c2c;
+}
